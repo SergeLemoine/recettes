@@ -23,9 +23,8 @@ p.categorie {
 }
 div.contenu {
     background-color: white;
-    margin: 60px 10% 50px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
 }
@@ -53,28 +52,25 @@ div.separateur{
 div.info{
     position: relative;
 }
-
 table.info{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 50px;
     color: white;
     background-color: #6C829DC0;
     vertical-align: top;
 }
-
 table.info th{
-    text-align: center;
     vertical-align: bottom;
     padding-bottom: 8px;
+    font-size: 14px;
 }
-
 table.info td{
     text-align: center;
     vertical-align: top;
+    font-size: 12px;
 }
-
 img.info{
     display:block;
     min-height: 200px;
@@ -82,29 +78,21 @@ img.info{
     object-fit: cover;
     background-color: lightgray;
 }
-
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
-
 div.colonne h2{
     text-align: center;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     border-bottom: 5px solid #6C829D;
     padding-bottom: 5px;
 }
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10%;
 }
-
-div.colonne2{
-    float: right;
-}
-
 div.ingredients p{
     text-align: center;
     font-size: 14px;
@@ -138,4 +126,41 @@ table.preparation td{
 table.preparation td.preparation_etape{
     font-size: 14px;
     padding-left: 10px;
+}
+
+
+@media only screen and (min-width: 768px){
+   div.contenu {
+        margin: 50px 10% 50px 10%;
+        padding: 0 30px 30px 30px;        
+        min-width: 350px;
+    }
+    table.info {
+        height: 80px;
+    }
+    table.info th {
+        font-size: 16px;
+    }
+    table.info td {
+        font-size: 14px;
+    }
+    div.colonne {
+        width: 45%;
+    }
+    div.colonne h2 {
+        font-size: 14px;
+    }
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    div.colonne2 {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px){
+   div.contenu {
+        margin: 50px auto 50px auto;
+        max-width: 645px;
+    }
 }
